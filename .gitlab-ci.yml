@@ -5,10 +5,10 @@ tests:
   stage: test
   image: mcr.microsoft.com/playwright:v1.43.0-jammy
   script:
-  -npm ci
-  -npx playwright test
+    - npm ci
+    - npx playwright test
   artifacts:
     name: "html report"
     when: "always"
     paths:
-        -playwright-report/index.html
+      - playwright-report/index.html
